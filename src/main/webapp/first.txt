@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Java Webapp</title>
+</head>
+<body>
+    <h1>Welcome to my Java Webapp!</h1>
+    <p>Click the link below to see a message from the servlet:</p>
+    <a href="/hello">Hello from Servlet</a>
+</body>
+</html>
