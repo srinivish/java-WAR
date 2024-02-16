@@ -10,6 +10,15 @@ public class HelloServlet extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
-        out.println("<h1>Hello from my Java webapp!</h1>");
+
+        // Get the name parameter from the request
+        String name = request.getParameter("name");
+
+        // If name exists, personalize the greeting; otherwise, use a default message
+        if (name != null && !name.isEmpty()) {
+            out.println("<h1>Hello, " + name + "!</h1>");
+        } else {
+            out.println("<h1>Hello, world!</h1>");
+        }
     }
 }
